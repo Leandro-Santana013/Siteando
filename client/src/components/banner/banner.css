@@ -1,0 +1,121 @@
+.container-banner {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    background: WHITE;
+    overflow: "hidden",
+}
+
+.text-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-20%, -30%);
+    font-Family: Arial, sans-serif;
+    line-Height: 1.2;
+    font-Size: 4vw;
+    text-Align: left;
+    z-Index: 1,
+}
+
+.text {
+    z-Index: 1;
+    position: relative;
+    padding: 20px;
+    font-size: 3.5vw;
+}
+
+.text-block {
+    width: 20%;
+    font-size: 0.8vw;
+    position: absolute;
+    top: 55%;
+    left: 61%;
+    transform: translate(-20%, -30%);
+    font-family: Arial, sans-serif;
+
+}
+
+.circle-banner {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    top: 90%;
+    left: 61%;
+    border-radius: 100%;
+    transform: translate(-20%, -30%);
+    background-color: black;
+
+    animation:  moveSmallRectangle 17s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.circle-banner1 {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    top: 80%;
+    left: 85%;
+    border-radius: 100%;
+    transform: translate(-20%, -30%);
+    background-color: black;
+
+    animation: moveRectangle2 17s linear infinite;
+}
+@keyframes moveSmallRectangle {
+    0% {
+        top: 90%;
+        left: 61%; /* Ponto inicial */
+    }
+    25% {
+        top: 90%;
+        left: 70%; /* Move mais para a direita */
+    }
+    50% {
+        top: 85%; /* Move para cima */
+        left: 70%; /* Permanece na direita */
+    }
+    75% {
+        top: 85%; /* Permanece em cima */
+        left: 61%; /* Move para a esquerda */
+    }
+    100% {
+        top: 90%; /* Retorna para baixo */
+        left: 61%; /* Retorna à esquerda */
+    }
+}
+
+
+/* Animação para a segunda bola */
+@keyframes moveRectangle2 {
+    0% {
+        top: 80%;
+        left: 85%; /* Ponto inicial */
+    }
+    25% {
+        top: 80%;
+        left: 74%; /* Move para esquerda */
+    }
+    50% {
+        top: 85%;
+        left: 74%; /* Move para a baixo */
+    }
+    75% {
+        top: 85%;
+        left: 85%; /* Move para cima */
+    }
+    100% {
+        top: 80%;
+        left: 85%; /* Retorna ao ponto inicial */
+    }
+}
+
+.conteiner-news {
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 700;
+    top: 90%;
+    left: 15%;
+    transform: translate(-60%, -30%);
+    margin: 0;
+}
+

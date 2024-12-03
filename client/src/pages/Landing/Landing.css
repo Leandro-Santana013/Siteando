@@ -1,0 +1,316 @@
+.main {
+    display: flex;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.h4-landing {
+    font-weight: 200;
+    font-size: 0.8vw;
+}
+
+.h2-news {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 25vw;
+    height: 22vw;
+    background-color: black;
+}
+
+.prod h2 {
+    color: white;
+    font-size: 2vw;
+}
+
+.prod p {
+    align-self: flex-start;
+    color: white;
+    font-size: 1vw;
+}
+
+.prod1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 25vw;
+    background-color: #f2f2f2;
+
+}
+
+.prod2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 25vw;
+    background-color: #f2f2f2;
+    padding: 2vw;
+    gap: 1.5vw;
+    box-sizing: border-box;
+}
+
+.prod2 h2 {
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+}
+
+.prod2 p {
+    font-size: 0.7vw;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.prod2 img {
+    width: 100%;
+    /* Ajusta a imagem ao tamanho do container */
+    height: auto;
+    border-radius: 5px;
+    /* Adiciona cantos arredondados */
+    margin: 1.5vw 0;
+    /* Espaçamento acima e abaixo da imagem */
+}
+
+.prod2 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1vw 0 0;
+    /* Espaçamento superior */
+    color: black;
+}
+
+.bannerlogo {
+    width: 70%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    flex-grow: 1;
+    padding: 0 1.5vw;
+    height: 4vw;
+    color: white;
+}
+
+.magnifier {
+    position: relative;
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+.circle-lupa {
+    width: 50%;
+    height: 50%;
+    border: 0.3vw solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.handle {
+    width: 0.2vw;
+    height: 0.2vw;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    left: 85%;
+    animation: expand 1.5s infinite ease-in-out;
+}
+
+@keyframes expand {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.container-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 0.4vw);
+    gap: 0.25vw;
+}
+
+.circle {
+    width: 0.28vw;
+    height: 0.28vw;
+    background-color: white;
+    border-radius: 50%;
+    animation: expand 1.2s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.circle:nth-child(6) {
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(7) {
+    animation-delay: 0.1s;
+}
+
+.circle:nth-child(8) {
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(9) {
+    animation-delay: 0.5s;
+}
+
+.content1 {
+    display: flex;
+    gap: 1.5vw;
+    justify-items: center;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-weight: 200;
+}
+
+.btn-start {
+    display: flex;
+    background-color: #0e79eb;
+    width: 5vw;
+    height: 2vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+
+.down-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 3vw;
+    padding: 1.5vw;
+    padding-left: 4.6vw;
+    
+}
+
+.news-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1vw;
+}
+
+.menu-icon {
+    font-size: 2vw;
+    color: #333;
+    cursor: pointer;
+    margin-right: 0.5vw;
+}
+
+.icon {
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+}
+
+.text-block {
+    width: 20%;
+    position: absolute;
+    top: 55%;
+    left: 61%;
+    transform: translate(-20%, -30%);
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+.conteiner-news {
+    position: absolute;
+    /* Use "absolute" se o posicionamento depende de um elemento pai posicionado */
+    font-size: 5vw;
+    font-weight: 700;
+    top: 90%;
+    /* Posiciona o elemento 100% abaixo do topo do elemento pai */
+    left: 15%;
+    /* Alinha o elemento com o lado esquerdo do elemento pai */
+    transform: translate(-60%, -30%);
+    /* Ajusta a posição com base em porcentagens */
+    margin: 0;
+}
+
+.company {
+    display: flex;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 30vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.down-bar-white .menu-icon,
+.down-bar-white h2,
+.down-bar-white .icon,
+.down-bar-white p {
+    color: white;
+}
+
+.logocompany {
+    width: 50%;
+    justify-content: center;
+}
+
