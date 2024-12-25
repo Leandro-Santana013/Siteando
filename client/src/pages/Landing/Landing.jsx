@@ -1,22 +1,37 @@
 import React, { useState, useEffect, useContext } from 'react'
 import "./Landing.css"
-import { Banner, Footer } from "../../components"
-import bannerCompany from "../../assets/image.png"
+import { UserContext } from '../../context/userContext'
+import { Banner, Formulario} from "../../components"
 import bannerLogo from "../../assets/imagelogo.png"
 import ftb from "../../assets/ftb.jpg"
 
-const Landing = () => {
 
+
+const Landing = () => {
+        const {modal, setModal} = useContext(UserContext);
+        useEffect(() => {
+            console.log(modal)
+          }, [modal]);
+
+    const handleBefore = () => {
+        if( modal ===  true) {
+            return;
+        }else
+          setModal(true);
+      };
+
+      
     const circles = Array.from({ length: 9 });
     return (
         <>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></link>
+            <Formulario></Formulario>
             <div className='main'>
                 <div className='side'>
                     <div className='prod'>
                         <div className='content-text-prod'>
-                            <h2><strong>Produtive<br />Free and easy<br />New</strong></h2>
-                            <p>atora</p>
+                            <h2>Criamos<strong><br />soluções digitais<br />sob medida</strong></h2>
+                            <p>Siteando</p>
                         </div>
                     </div>
                     <div className='prod1'><img src={bannerLogo} alt="" className='bannerlogo' /></div>
@@ -45,7 +60,7 @@ const Landing = () => {
                         <div className='content2'>
                             <h4 className='h4-landing'>company</h4>
                             <h4 className='h4-landing'>Sing-in</h4>
-                            <div className='btn-start'>get started</div>
+                            <div className='btn-start' onClick={handleBefore}>get started</div>
                         </div>
                     </nav>
                     <div className='down-bar down-bar-black'>
@@ -72,7 +87,7 @@ const Landing = () => {
                                 <div className='icon'>&gt;</div>
                             </div>
                         </div>
-                        <img src={bannerCompany} alt="" className='logocompany'/>
+
                     </div> 
                 </div>
             </div>
